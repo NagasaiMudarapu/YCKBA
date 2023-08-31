@@ -4,7 +4,7 @@ var app=express();
 var PORT = process.env.PORT || 3000;
 
 app.get('/',function(req,res){
-    res.sendFile(__dirname+'/FrontPage.html');
+    res.send("CHECK");
 });
 app.get('/resume',function(req,res){
     res.sendFile(__dirname+'/Resume.html');
